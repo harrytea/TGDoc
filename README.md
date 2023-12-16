@@ -6,7 +6,7 @@ Towards Improving Document Understanding: An Exploration on Text-Grounding via M
 
 ## Pretrained Models
 
-coming soon
+[BaiduLink](https://pan.baidu.com/s/1FJ8w5cYMxJ1aOq5mLqYrbg) Code: 0ijk 
 
 ## Installation
 
@@ -51,6 +51,18 @@ For  8-A100-40G, run `bash scripts/pretrain_20.sh`
 For 8-3090-24G, run `bash scripts/finetune_deep.sh`
 
 For  8-A100-40G, run `bash scripts/finetune_20.sh`
+
+#### Inference
+
+quickly use
+
+```shell
+bash scripts/cli2_a16.sh
+```
+
+We used the widely used [MultimodalOCR](https://github.com/Yuliang-Liu/MultimodalOCR) to validate our method. As noted in the paper, we added "Support your reasoning with the coordinates [xmin, ymin, xmax, ymax]" at the end of each question.
+
+
 
 ## Cases
 

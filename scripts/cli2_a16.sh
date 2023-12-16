@@ -13,6 +13,6 @@
 export CUDA_VISIBLE_DEVICES="5"
 python -m llava.serve.cli \
     --model-path ./checkpoints/llava-7b-finetune \
-    --image-file "/data/wangyh/mllms/LLaVA_grounding_lora/watch.jpg" \
+    --image-file "/data/wangyh/mllms/LLaVA_grounding/watch.jpg" \
     --conv-mode "llava_v1"
     # --query "What are the things I should be cautious about when I visit here?" 
