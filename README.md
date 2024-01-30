@@ -6,7 +6,10 @@ Towards Improving Document Understanding: An Exploration on Text-Grounding via M
 
 ## Pretrained Models
 
-[BaiduLink](https://pan.baidu.com/s/1FJ8w5cYMxJ1aOq5mLqYrbg) Code: 0ijk 
+[tgdoc-7b-finetune-224](https://pan.baidu.com/s/1-FA2hJrDS0y6fovtCkvzlw) Code: gxqt
+
+[tgdoc-13b-finetune-224](https://pan.baidu.com/s/1U85erwbxBD55cdMAu_9gCg) Code: gxqt 
+
 
 ## Installation
 
@@ -36,6 +39,12 @@ bitsandbytes==0.41.0
 
 **Note**: If you use a GTX 3090 machine, you need to enable deepspeed, and you must maintain the CUDA version at 11.7, otherwise the loss will not be optimized during the training process. This issue does not occur with the A100 when not using deepspeed.
 
+## Datasets
+
+Download the llava and llavar dataset
+
+Our full datasets can be download from [here](https://pan.baidu.com/s/1h0r9gCgBKShyzRPeDZsrPA) Code: gxqt
+
 ## Train
 
 Modify the configuration file in `llava/data/config.py`.
@@ -54,7 +63,7 @@ For  8-A100-40G, run `bash scripts/finetune_20.sh`
 
 #### Inference
 
-quickly use
+modify the `model-path` param to use different models.
 
 ```shell
 bash scripts/cli2_a16.sh
